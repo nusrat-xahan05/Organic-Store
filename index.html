@@ -33,31 +33,9 @@
         --font-poppins: "Poppins", sans-serif;
         --background-image-leaf1: url('./images/leaf01.png');
         --background-image-call-to-action: url('./images/call.jpg');
+        --background-image-testimonials: url('./images/testimonials.jpg');
       }
     </style>
-    <!-- <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: 'rgb(139, 195, 74)',
-                        secondary: 'rgb(17, 17, 17)',
-                        body: 'rgb(248, 246, 243)',
-                        accent: 'rgb(106, 151, 57)',
-                        body_neutral: 'rgb(51, 51, 51)',
-                    },
-                    fontFamily: {
-                        Poppins: 'Poppins',
-                    },
-                    backgroundImage: {
-                        leaf1: "url('./images/leaf01.png')",
-                        call_to_action: "url('./images/call.jpg')",
-                        testimonials: "url('./images/testimonials.jpg')",
-                    },
-                },
-            },
-        }
-    </script> -->
 </head>
 
 <body class="font-poppins">
@@ -150,7 +128,7 @@
                 </div>
                 <!-- BANNER TEXT -->
                 <div class="sm:text-left text-center">
-                    <img class="sm:block hidden" src="./images/small-leaf.png" alt="background leaf watermark" />
+                    <img class="sm:block hidden" src="./images/small-leaf.png" alt="" />
                     <h4 class="sm:text-xl text-lg font-semibold my-5">
                         Best Quality Products
                     </h4>
@@ -244,10 +222,14 @@
                     tell website visitors who you are and why they should choose your business
                 </h2>
                 <p class="sm:text-lg text-base leading-8 text-justify sm:mb-10 mb-5">
-                    At our organic store, we believe that good health begins with fresh, natural food. That's why we carefully source fruits, vegetables, and groceries directly from trusted organic farms. Every product on our shelves is free from harmful chemicals, grown with care, and packed with nutrition. We are passionate about promoting a healthier lifestyle while supporting sustainable farming practices. With us, you don't just shop — you invest in wellness, community, and a greener planet.
+                    At our organic store, we believe that good health begins with fresh, natural food. That's why we
+                    carefully source fruits, vegetables, and groceries directly from trusted organic farms. Every
+                    product on our shelves is free from harmful chemicals, grown with care, and packed with nutrition.
+                    We are passionate about promoting a healthier lifestyle while supporting sustainable farming
+                    practices. With us, you don't just shop — you invest in wellness, community, and a greener planet.
                 </p>
                 <button
-                    class="flex gap-2 items-center bg-accent hover:bg-primary px-10 py-4 rounded-md font-semibold text-white transition-colors duration-300 ease-in-out">
+                    class="flex gap-2 items-center bg-accent hover:bg-primary px-10 py-4 rounded-md font-semibold text-white transition-colors duration-300 ease-in-out cursor-pointer">
                     Find Out More
                 </button>
             </div>
@@ -276,8 +258,7 @@
                         think of what you want your visitors to do next maybe they should contact you?
                     </p>
                     <div class="flex justify-center">
-                        <button
-                            class="btn bg-accent hover:bg-transparent hover:border-white text-white border-accent">
+                        <button class="btn bg-accent hover:bg-transparent hover:border-white text-white border-accent">
                             Get In Touch
                         </button>
                     </div>
@@ -296,7 +277,61 @@
         <!-- ==================================================
                             BANNER PART END
          ================================================== -->
+
+
+        <!-- ==================================================
+                            BRAND PART START
+         ================================================== -->
+        <section class="flex lg:flex-row flex-col bg-white justify-center items-center py-10 bg-body">
+            <h2 class="text-2xl font-semibold">Featured Brands:</h2>
+            <div class="flex lg:flex-nowrap flex-wrap justify-center items-center">
+                <img src="./images/logo-1.svg" alt="" />
+                <img src="./images/logo-2.svg" alt="" />
+                <img src="./images/logo-3.svg" alt="" />
+                <img src="./images/logo-4.svg" alt="" />
+                <img src="./images/logo-5.svg" alt="" />
+            </div>
+        </section>
+        <!-- ==================================================
+                            BRAND PART END
+         ================================================== -->
     </main>
+
+
+    <!-- ==================================================
+                       FOOTER PART START
+    ================================================== -->
+    <footer class="bg-secondary text-white p-10">
+        <div class="footer w-11/12 mx-auto py-10 md:grid-flow-col">
+            <aside>
+                <img src="./images/logo-white.png" alt="" />
+                <p>Providing Organic Food since 1992</p>
+            </aside>
+            <nav>
+                <h6 class="footer-title">Services</h6>
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Company</h6>
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Legal</h6>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+            </nav>
+        </div>
+    </footer>
+    <!-- ==================================================
+                       FOOTER PART END
+    ================================================== -->
 </body>
 
 </html>
