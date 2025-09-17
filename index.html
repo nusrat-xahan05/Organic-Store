@@ -10,7 +10,8 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
     <!-- Font awesome -->
@@ -31,6 +32,7 @@
 
         --font-poppins: "Poppins", sans-serif;
         --background-image-leaf1: url('./images/leaf01.png');
+        --background-image-call-to-action: url('./images/call.jpg');
       }
     </style>
     <!-- <script>
@@ -144,11 +146,11 @@
                 class="relative z-10 lg:w-9/12 w-11/12 mx-auto sm:grid grid-cols-2 gap-10 items-center justify-center sm:py-28 py-5">
                 <!-- BANNER IMAGE -->
                 <div class="">
-                    <img src="./images/bannerbg.png" alt="" />
+                    <img src="./images/bannerbg.png" alt="banner image of fresh vegetables with company's packets" />
                 </div>
                 <!-- BANNER TEXT -->
                 <div class="sm:text-left text-center">
-                    <img class="sm:block hidden" src="./images/small-leaf.png" alt="" />
+                    <img class="sm:block hidden" src="./images/small-leaf.png" alt="background leaf watermark" />
                     <h4 class="sm:text-xl text-lg font-semibold my-5">
                         Best Quality Products
                     </h4>
@@ -156,8 +158,8 @@
                         Join The Organic Movement!
                     </h1>
                     <p class="lg:w-3/4 text-neutral-500 my-5">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                        tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        From farm to table, we bring you pure organic fruits, vegetables, and groceries crafted with
+                        care for your family's well-being.
                     </p>
                     <div class="flex sm:justify-start justify-center pb-10">
                         <button
@@ -173,8 +175,127 @@
                             BANNER PART END
          ================================================== -->
     </header>
-    
+
     <main>
+        <!-- ==================================================
+                     SPECIAL FEATURES PART START
+         ================================================== -->
+        <section class="bg-secondary text-white">
+            <div class="w-11/12 mx-auto py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:gap-10 gap-5">
+                <div class="bg-body-neutral p-10 rounded-sm flex items-start gap-5">
+                    <div>
+                        <i class="fa-solid fa-truck text-4xl text-primary"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold capitalize mb-2 leading-none">
+                            free shipping
+                        </h3>
+                        <p>Above $5 Only</p>
+                    </div>
+                </div>
+                <div class="bg-body-neutral p-10 rounded-sm flex items-start gap-5">
+                    <div>
+                        <i class="fa-solid fa-certificate text-4xl text-primary"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold capitalize mb-2 leading-none">
+                            Certified Organic
+                        </h3>
+
+                        <p>100% Organic</p>
+                    </div>
+                </div>
+                <div class="bg-body-neutral p-10 rounded-sm flex items-start gap-5">
+                    <div>
+                        <i class="fa-solid fa-piggy-bank text-4xl text-primary"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold capitalize mb-2 leading-none">
+                            Huge Savings
+                        </h3>
+                        <p>At Lowest Price</p>
+                    </div>
+                </div>
+                <div class="bg-body-neutral p-10 rounded-sm flex items-start gap-5">
+                    <div>
+                        <i class="fa-solid fa-recycle text-4xl text-primary"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold capitalize mb-2 leading-none">
+                            Easy Returns
+                        </h3>
+                        <p>No Questions Asked</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================================================
+                     SPECIAL FEATURES PART END
+         ================================================== -->
+
+
+        <!-- ==================================================
+                            ABOUT US PART START
+         ================================================== -->
+        <section class="grid lg:grid-cols-2 items-center gap-10">
+            <div class="w-11/12 lg:ml-auto mx-auto lg:py-0 pt-10 capitalize">
+                <h5 class="text-xl font-semibold">about us</h5>
+                <h2 class="sm:text-5xl text-3xl font-medium sm:my-10 my-5">
+                    tell website visitors who you are and why they should choose your business
+                </h2>
+                <p class="sm:text-lg text-base leading-8 text-justify sm:mb-10 mb-5">
+                    At our organic store, we believe that good health begins with fresh, natural food. That's why we carefully source fruits, vegetables, and groceries directly from trusted organic farms. Every product on our shelves is free from harmful chemicals, grown with care, and packed with nutrition. We are passionate about promoting a healthier lifestyle while supporting sustainable farming practices. With us, you don't just shop — you invest in wellness, community, and a greener planet.
+                </p>
+                <button
+                    class="flex gap-2 items-center bg-accent hover:bg-primary px-10 py-4 rounded-md font-semibold text-white transition-colors duration-300 ease-in-out">
+                    Find Out More
+                </button>
+            </div>
+            <div class="relative">
+                <img src="./images/about.jpg" alt="image of cucumber soap for about part" />
+
+                <!-- overlay -->
+                <div class="absolute inset-0 bg-body-neutral/40"></div>
+            </div>
+        </section>
+        <!-- ==================================================
+                            ABOUT US PART END
+         ================================================== -->
+
+
+        <!-- ==================================================
+                        CALL TO ACTION PART START
+         ================================================== -->
+        <section class="bg-call-to-action py-56 bg-no-repeat bg-cover bg-center relative">
+            <div class="absolute inset-0 bg-body-neutral/40 flex justify-center items-center">
+                <div class="z-10 text-white">
+                    <h3 class="text-5xl font-semibold text-center">
+                        Insert A call to action
+                    </h3>
+                    <p class="text-xl w-2/3 mx-auto text-center my-5">
+                        think of what you want your visitors to do next maybe they should contact you?
+                    </p>
+                    <div class="flex justify-center">
+                        <button
+                            class="btn bg-accent hover:bg-transparent hover:border-white text-white border-accent">
+                            Get In Touch
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================================================
+                        CALL TO ACTION PART END
+         ================================================== -->
+
+
+        <!-- ==================================================
+                            BANNER PART START
+         ================================================== -->
+
+        <!-- ==================================================
+                            BANNER PART END
+         ================================================== -->
     </main>
 </body>
 
