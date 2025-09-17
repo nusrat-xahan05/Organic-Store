@@ -8,8 +8,11 @@
     <title>Organic Store</title>
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -24,9 +27,10 @@
         --color-secondary: rgb(17, 17, 17);
         --color-body: rgb(248, 246, 243);
         --color-accent: rgb(106, 151, 57);
-        --color-body_neutral: rgb(51, 51, 51);
-        --font-Poppins: Poppins;
-        --backgroundImage-leaf1: url('./images/leaf01.png');
+        --color-body-neutral: rgb(51, 51, 51);
+
+        --font-poppins: "Poppins", sans-serif;
+        --background-image-leaf1: url('./images/leaf01.png');
       }
     </style>
     <!-- <script>
@@ -54,7 +58,7 @@
     </script> -->
 </head>
 
-<body>
+<body class="font-poppins">
     <header>
         <!-- ==================================================
                             NAVBAR PART START
@@ -132,32 +136,35 @@
         <!-- ==================================================
                             BANNER PART START
          ================================================== -->
-        <section class="bg-leaf1 bg-no-repeat bg-right-bottom">
-            <div class="h-full w-full bg-body bg-opacity-90">
-                <div
-                    class="lg:w-9/12 w-11/12 h-full mx-auto sm:grid grid-cols-2 gap-10 items-center justify-center sm:py-28 py-5">
-                    <div class="">
-                        <img src="./images/bannerbg.png" alt="" />
-                    </div>
-                    <div class="sm:text-left text-center">
-                        <img class="sm:block hidden" src="./images/small-leaf.png" alt="" />
-                        <h4 class="sm:text-xl text-lg font-semibold my-5">
-                            Best Quality Products
-                        </h4>
-                        <h1 class="lg:text-6xl text-4xl font-bold leading-tight">
-                            Join The Organic Movement!
-                        </h1>
-                        <p class="lg:w-3/4 text-neutral-500 my-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-                        </p>
-                        <div class="flex sm:justify-start justify-center pb-10">
-                            <button
-                                class="flex gap-2 items-center bg-accent hover:bg-primary px-10 py-4 rounded-md font-semibold text-white transition-colors duration-300 ease-in-out">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                <span>shop Now</span>
-                            </button>
-                        </div>
+        <section class="relative bg-body overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div class="bg-leaf1 bg-no-repeat bg-right-bottom w-full h-full opacity-10"></div>
+            </div>
+            <div
+                class="relative z-10 lg:w-9/12 w-11/12 mx-auto sm:grid grid-cols-2 gap-10 items-center justify-center sm:py-28 py-5">
+                <!-- BANNER IMAGE -->
+                <div class="">
+                    <img src="./images/bannerbg.png" alt="" />
+                </div>
+                <!-- BANNER TEXT -->
+                <div class="sm:text-left text-center">
+                    <img class="sm:block hidden" src="./images/small-leaf.png" alt="" />
+                    <h4 class="sm:text-xl text-lg font-semibold my-5">
+                        Best Quality Products
+                    </h4>
+                    <h1 class="lg:text-6xl text-4xl font-bold leading-tight">
+                        Join The Organic Movement!
+                    </h1>
+                    <p class="lg:w-3/4 text-neutral-500 my-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                        tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                    </p>
+                    <div class="flex sm:justify-start justify-center pb-10">
+                        <button
+                            class="flex gap-2 items-center bg-accent hover:bg-primary px-10 py-4 rounded-md font-semibold text-white transition-colors duration-300 ease-in-out">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>shop Now</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -166,7 +173,9 @@
                             BANNER PART END
          ================================================== -->
     </header>
-
+    
+    <main>
+    </main>
 </body>
 
 </html>
