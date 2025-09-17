@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo-white.png" type="image/x-icon">
+    <title>Organic Store</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind & DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Custom Style -->
+    <style type="text/tailwindcss">
+        @theme {
+        --color-primary: rgb(139, 195, 74);
+        --color-secondary: rgb(17, 17, 17);
+        --color-body: rgb(248, 246, 243);
+        --color-accent: rgb(106, 151, 57);
+        --color-body_neutral: rgb(51, 51, 51);
+        --font-Poppins: Poppins;
+        --backgroundImage-leaf1: url('./images/leaf01.png');
+      }
+    </style>
+    <!-- <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: 'rgb(139, 195, 74)',
+                        secondary: 'rgb(17, 17, 17)',
+                        body: 'rgb(248, 246, 243)',
+                        accent: 'rgb(106, 151, 57)',
+                        body_neutral: 'rgb(51, 51, 51)',
+                    },
+                    fontFamily: {
+                        Poppins: 'Poppins',
+                    },
+                    backgroundImage: {
+                        leaf1: "url('./images/leaf01.png')",
+                        call_to_action: "url('./images/call.jpg')",
+                        testimonials: "url('./images/testimonials.jpg')",
+                    },
+                },
+            },
+        }
+    </script> -->
+</head>
+
+<body>
+    <header>
+        <!-- ==================================================
+                            NAVBAR PART START
+         ================================================== -->
+        <nav class="navbar w-11/12 mx-auto">
+            <!-- NAVBAR LOGO -->
+            <div class="navbar-start">
+                <a href="#">
+                    <img class="w-[150px]" src="./images/logo.svg" alt="" />
+                </a>
+            </div>
+
+            <!-- NAVBAR ITEMS -->
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 flex items-center gap-5 text-lg font-medium">
+                    <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                        <a href="#">Everything</a>
+                    </li>
+                    <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                        <a href="#">Groceries</a>
+                    </li>
+                    <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-5 items-center">
+                <!-- NAVBAR ICONS -->
+                <div class="flex gap-5 text-lg">
+                    <button class="flex items-center gap-2 font-semibold text-accent">
+                        <span>$10.00</span>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                    <button><i class="fa-solid fa-user"></i></button>
+                </div>
+
+                <!-- NAVBAR MOBILE MENU -->
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-primary text-lg">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 right-0 p-2 shadow text-lg font-medium gap-5">
+                        <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                            <a href="#">Everything</a>
+                        </li>
+                        <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                            <a href="#">Groceries</a>
+                        </li>
+                        <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="hover:text-primary transition-colors ease-in-out duration-300">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ==================================================
+                            NAVBAR PART END
+         ================================================== -->
+
+
+
+        <!-- ==================================================
+                            BANNER PART START
+         ================================================== -->
+        <section class="bg-leaf1 bg-no-repeat bg-right-bottom">
+            <div class="h-full w-full bg-body bg-opacity-90">
+                <div
+                    class="lg:w-9/12 w-11/12 h-full mx-auto sm:grid grid-cols-2 gap-10 items-center justify-center sm:py-28 py-5">
+                    <div class="">
+                        <img src="./images/bannerbg.png" alt="" />
+                    </div>
+                    <div class="sm:text-left text-center">
+                        <img class="sm:block hidden" src="./images/small-leaf.png" alt="" />
+                        <h4 class="sm:text-xl text-lg font-semibold my-5">
+                            Best Quality Products
+                        </h4>
+                        <h1 class="lg:text-6xl text-4xl font-bold leading-tight">
+                            Join The Organic Movement!
+                        </h1>
+                        <p class="lg:w-3/4 text-neutral-500 my-5">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+                            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                        </p>
+                        <div class="flex sm:justify-start justify-center pb-10">
+                            <button
+                                class="flex gap-2 items-center bg-accent hover:bg-primary px-10 py-4 rounded-md font-semibold text-white transition-colors duration-300 ease-in-out">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>shop Now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ==================================================
+                            BANNER PART END
+         ================================================== -->
+    </header>
+
+</body>
+
+</html>
